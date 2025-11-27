@@ -1,0 +1,10 @@
+services:
+  02toolsandmcp:
+    image: 02toolsandmcp
+    build:
+      context: 02-tools-and-mcp
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
